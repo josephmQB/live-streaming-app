@@ -1,0 +1,13 @@
+<div class="container-fluid my-5">
+    <div class="d-flex justify-content-center mb-4">
+        <button class="btn btn-success mr-3" ngxClipboard [cbContent]="'http://localhost:4200/live-stream/host?channel=room'">add host</button>
+        <button class="btn btn-primary mr-3" ngxClipboard [cbContent]="'http://localhost:4200/live-stream/audience?channel=room'">invite audience</button>
+        <button class="btn btn-danger" (click)="OnLeave()">Leave</button>
+    </div>
+    <div id="player-wrap" class="d-flex flex-wrap justify-content-center">
+        <div class="m-3">
+            <span id="local-player-name" class="player-name"></span>
+            <div id="local-player" class="player"></div>
+        </div>
+    </div>
+</div>
